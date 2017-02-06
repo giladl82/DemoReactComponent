@@ -1,0 +1,15 @@
+.cet__miniform__container {
+  border:solid 2px blue;
+}
+
+.cet__miniform__label{
+  font-size: 16px;
+}
+
+.cet__miniform__input {
+  background-color: #eee;
+}
+
+.cet__miniform__submit{
+  border: solid 2px green;
+}
