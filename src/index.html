@@ -7,23 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link href="styles/cetminiform.css" rel="stylesheet" type="text/css">
+  <link href="styles/demominiform.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <div id="app">APPLICATION CONTENT</div>
+  <div id="app"></div>
 
   <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
   <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
   <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
   <script type="text/javascript" src="/assets/app.js"></script>
-
-  <!--<script src="http://productplayer.testing.cet.ac.il/dependencies/require.js"
-          data-main="main.js"></script>-->
   <script>
 
-     var CetMiniForm = CetMiniForm.default;
-     var cetMiniForm = ReactDOM.render(React.createElement(CetMiniForm,
+     var DemoMiniForm = DemoMiniForm.default;
+     var demoMiniForm = ReactDOM.render(React.createElement(DemoMiniForm,
      {
        label: 'new label',
        onSubmit: function(data) {
@@ -34,7 +31,7 @@
      document.getElementById('app'));
 
      setTimeout(function () {
-      cetMiniForm.setValue('the value')
+      demoMiniForm.setValue('the value')
      }, 1500);
   </script>
 </body>

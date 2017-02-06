@@ -8,6 +8,7 @@
     "copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./src/styles ./dist/",
     "copystyles": "copyfiles -f ./src/styles/* ./dist/styles",
     "dist": "npm run copy & npm run copystyles & webpack --env=dist",
+    "build": "npm run clean & npm run dist",
     "lint": "eslint ./src",
     "posttest": "npm run lint",
     "release:major": "npm version major && npm publish && git push --follow-tags",

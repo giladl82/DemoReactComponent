@@ -16,7 +16,7 @@ module.exports = {
   devtool: 'eval',
   output: {
     path: path.join(__dirname, '/../dist/assets'),
-    library: 'CetMiniForm',
+    library: 'DemoMiniForm',
     libraryTarget: 'umd',
     filename: 'app.js',
     publicPath: defaultSettings.publicPath

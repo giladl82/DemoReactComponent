@@ -1,8 +1,8 @@
-//require('styles/CetMiniForm.css');
+//require('styles/DemoMiniForm.css');
 
 var React = require('react');
 
-class CetMiniForm extends React.Component {
+class DemoMiniForm extends React.Component {
   constructor(props) {
     super(props)
 
@@ -34,19 +34,19 @@ class CetMiniForm extends React.Component {
 
   render() {
     return (
-      <div className="cet__miniform__container">
-        <label className="cet__miniform__label">{this.state.label}</label>&nbsp;
-        <input className="cet__miniform__input" onChange={this.inputChangeHandler} data-for="value" ref={(input) => {this.input = input}} />
-        <button className="cet__miniform__submit" onClick={this.submitHandler}>Submit</button>
+      <div className="demo__miniform__container">
+        <label className="demo__miniform__label">{this.state.label}</label>&nbsp;
+        <input className="demo__miniform__input" onChange={this.inputChangeHandler} data-for="value" ref={(input) => {this.input = input}} />
+        <button className="demo__miniform__submit" onClick={this.submitHandler}>Submit</button>
       </div>
     );
   }
 }
 
-CetMiniForm.defaultProps = {
+DemoMiniForm.defaultProps = {
   label: 'I am a mini form',
   value: '',
   onSubmit: () => { console.log(this.state.input.value) }
 };
 
-export default CetMiniForm
+export default DemoMiniForm
